@@ -53,7 +53,7 @@ const Register = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <label className="input input-bordered flex items-center gap-2 label">
-                                    <input name="password" type={eye ? "text" : "password"} className="grow" placeholder="Password" />
+                                    <input name="password" type={eye ? "text" : "password"} className="grow" placeholder="password" />
                                     <span onClick={togglePassword} className="text-xl -ml-10 md:-ml-0">{eye ? <MdOutlineRemoveRedEye /> : <FaRegEyeSlash />}</span>
                                 </label>
                             </div>
@@ -62,7 +62,7 @@ const Register = () => {
                                     <span className="label-text">Confirm Password</span>
                                 </label>
                                 <label className="input input-bordered flex items-center gap-2 label">
-                                    <input name="password" type={eye ? "text" : "password"} className="grow" placeholder="Password" />
+                                    <input name="password" type={eye ? "text" : "password"} className="grow" placeholder="confirm password" />
                                     <span onClick={togglePassword} className="text-xl -ml-10 md:-ml-0">{eye ? <MdOutlineRemoveRedEye /> : <FaRegEyeSlash />}</span>
                                 </label>
                             </div>                          

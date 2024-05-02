@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
+import logo from '../../assets/images/Logo-FUNDAPROTAN-white.png'
 
 const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li><NavLink
+      <li><NavLink 
         onClick={hamburger}
         to="/"
         style={({ isActive }) => ({
@@ -19,7 +20,7 @@ const Navbar = () => {
           background: isActive ? "transparent" : "transparent",
         })}>Home</NavLink>
       </li>
-      <li><NavLink
+      <li><NavLink 
         onClick={hamburger}
         to="/"
         style={({ isActive }) => ({
@@ -40,7 +41,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={""} className="h-8" alt="" />
+            <img src={logo} className="w-16" alt="" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
               Donate
             </span>
@@ -52,7 +53,7 @@ const Navbar = () => {
               <Link to="/login">
                 <button
                   type="button"
-                  className="text-black bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
+                  className="text-[#222] bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
                 >
                   Login
                 </button>
@@ -60,7 +61,7 @@ const Navbar = () => {
               <Link to={"/register"}>
                 <button
                   type="button"
-                  className="text-black bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center "
+                  className="text-[#222] bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center "
                 >
                   Register
                 </button>
@@ -71,7 +72,7 @@ const Navbar = () => {
               <Link className="hidden md:flex" to="/login">
                 <button
                   type="button"
-                  className="text-black bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
+                  className="text-[#222] bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
                 >
                   Logout
                 </button>
@@ -117,7 +118,7 @@ const Navbar = () => {
         </div>
 
         {/* For Small device */}
-        <div className={`lg:hidden fixed p-6 z-[99] duration-500 md:w-[50%] w-[80%] h-screen top-0 text-white bg-gray-900 ${hamburger ? "right-0" : "right-[-350px] md:right-[-700px]"}`}>
+        <div className={`lg:hidden fixed p-6 z-[99] duration-500 md:w-[50%] w-[80%] h-screen top-0 text-white bg-[#5BBCFF] ${hamburger ? "right-0" : "right-[-350px] md:right-[-700px]"}`}>
           <button onClick={handleHamburger} className="text-2xl">
             <IoMdClose />
           </button>
@@ -127,7 +128,7 @@ const Navbar = () => {
             <Link onClick={handleHamburger} to="/login">
               <button
                 type="button"
-                className="text-white bg-[#FF6D60] hover:bg-[#ff988f] px-2 py-1 rounded-lg"
+                className="text-[#111] bg-[#FDDE55] hover:bg-[#FDDE55] px-2 py-1 rounded-lg font-semibold"
               >
                 Login
               </button>
@@ -135,7 +136,7 @@ const Navbar = () => {
             <Link onClick={handleHamburger} to="/register">
               <button
                 type="button"
-                className="text-white bg-[#FF6D60] hover:bg-[#ff988f] px-2 py-1 rounded-lg"
+                className="text-[#111] bg-[#FDDE55] hover:bg-[#FDDE55] px-2 py-1 rounded-lg font-semibold"
               >
                 Register
               </button>
@@ -150,7 +151,7 @@ const Navbar = () => {
             >
               <button
                 type="button"
-                className="text-white bg-[#FF6D60] hover:bg-[#ff988f] px-2 py-1 rounded-lg"
+                className="text-[#111] bg-[#FDDE55] hover:bg-[#FDDE55] px-2 py-1 rounded-lg font-semibold"
               >
                 Logout
               </button>
