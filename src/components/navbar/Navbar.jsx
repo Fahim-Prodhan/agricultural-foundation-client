@@ -43,7 +43,7 @@ const Navbar = () => {
           >
             <img src={logo} className="w-16" alt="" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-              Donate
+              FUNDAPROTAN
             </span>
           </Link>
 

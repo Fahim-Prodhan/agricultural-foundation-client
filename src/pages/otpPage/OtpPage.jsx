@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo from '../../assets/images/Logo-FUNDAPROTAN.png'
+import { Link } from 'react-router-dom';
 
 const OtpPage = () => {
     return (
@@ -20,7 +21,7 @@ const OtpPage = () => {
                         <input type="text" placeholder="Otp" className="input input-bordered rounded-md" required />
                     </div>
                     <div className='text-center mt-4'>
-                        <button className="btn bg-[#FDDE55]">Confirm</button>
+                      <Link to='/reset-password'><button className="btn bg-[#FDDE55]">Confirm</button></Link>
                     </div>
                 </form>
             </div>
