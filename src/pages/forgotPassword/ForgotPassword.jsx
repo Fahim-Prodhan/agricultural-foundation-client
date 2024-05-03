@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../assets/images/Logo-FUNDAPROTAN.png'
+import { Link } from 'react-router-dom';
 
 
 const ForgotPassword = () => {
@@ -21,7 +22,7 @@ const ForgotPassword = () => {
                         <input type="email" placeholder="email" className="input input-bordered rounded-md" required />
                     </div>
                     <div className='text-center mt-4'>
-                        <button className="btn bg-[#FDDE55]">Rest Password</button>
+                        <Link to='/otp'><button className="btn bg-[#FDDE55]">Send Email</button></Link>
                     </div>
                 </form>
             </div>
