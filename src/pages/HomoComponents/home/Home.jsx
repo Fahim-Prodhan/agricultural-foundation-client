@@ -1,8 +1,9 @@
-import React from 'react';
 import HeaderBanner from '../HeaderBanner/HeaderBanner';
 import Mission from '../Mission/Mission';
 
+
 const Home = () => {
+
     return (
         <div>
             <HeaderBanner></HeaderBanner>
