@@ -5,12 +5,17 @@ import Login from "../pages/login/Login";
 import ForgotPassword from "../pages/forgotPassword/ForgotPassword";
 import OtpPage from "../pages/otpPage/OtpPage";
 import ResetPassword from "../pages/resetPassword/ResetPassword";
+import Home from "../pages/HomoComponents/home/Home";
 
 const router = createBrowserRouter([
     {
         path:'/',
         element:<Root></Root>,
         children:[
+            {
+                path:'/',
+                element:<Home></Home>
+            },
             {
                 path:'/register',
                 element:<Register></Register>

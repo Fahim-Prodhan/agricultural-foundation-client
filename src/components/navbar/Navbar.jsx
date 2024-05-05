@@ -16,16 +16,22 @@ const Navbar = () => {
         onClick={hamburger}
         to="/"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#fff",
-          background: isActive ? "transparent" : "transparent",
+          color: isActive ? "#FDDE55" : "#fff",
+          border: isActive? '2px solid #FDDE55': '',
+          borderRadius:isActive? '5px':'',
+          padding:isActive? '5px 12px':'',
+          background: isActive ? "#1111111f" : "transparent",
         })}>Home</NavLink>
       </li>
       <li><NavLink 
         onClick={hamburger}
-        to="/"
+        to="/about"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#fff",
-          background: isActive ? "transparent" : "transparent",
+          color: isActive ? "#FDDE55" : "#fff",
+          border: isActive? '2px solid #FDDE55': 'none',
+          borderRadius:isActive? '5px':'',
+          padding:isActive? '5px 12px':'',
+          background: isActive ? "#1111111f" : "transparent",
         })}>About</NavLink>
       </li>
 
