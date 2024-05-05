@@ -16,7 +16,7 @@ const Navbar = () => {
         onClick={hamburger}
         to="/"
         style={({ isActive }) => ({
-          color: isActive ? "#FDDE55" : "#fff",
+          color: isActive ? "#fff" : "#fff",
           border: isActive? '2px solid #FDDE55': '',
           borderRadius:isActive? '5px':'',
           padding:isActive? '5px 12px':'',
@@ -27,12 +27,34 @@ const Navbar = () => {
         onClick={hamburger}
         to="/about"
         style={({ isActive }) => ({
-          color: isActive ? "#FDDE55" : "#fff",
+          color: isActive ? "#fff" : "#fff",
           border: isActive? '2px solid #FDDE55': 'none',
           borderRadius:isActive? '5px':'',
           padding:isActive? '5px 12px':'',
           background: isActive ? "#1111111f" : "transparent",
         })}>About</NavLink>
+      </li>
+      <li><NavLink 
+        onClick={hamburger}
+        to="/projects"
+        style={({ isActive }) => ({
+          color: isActive ? "#fff" : "#fff",
+          border: isActive? '2px solid #FDDE55': 'none',
+          borderRadius:isActive? '5px':'',
+          padding:isActive? '5px 12px':'',
+          background: isActive ? "#1111111f" : "transparent",
+        })}>Projects</NavLink>
+      </li>
+      <li><NavLink 
+        onClick={hamburger}
+        to="/blogs"
+        style={({ isActive }) => ({
+          color: isActive ? "#fff" : "#fff",
+          border: isActive? '2px solid #FDDE55': 'none',
+          borderRadius:isActive? '5px':'',
+          padding:isActive? '5px 12px':'',
+          background: isActive ? "#1111111f" : "transparent",
+        })}>Blogs</NavLink>
       </li>
 
     </>
@@ -128,7 +150,7 @@ const Navbar = () => {
           <button onClick={handleHamburger} className="text-2xl">
             <IoMdClose />
           </button>
-          <ul className="font-semibold text-xl mt-6 ">{links}</ul>
+          <ul className="font-semibold space-y-3 mt-6 ">{links}</ul>
 
           <div className={`md:hidden flex gap-4 mt-6`}>
             <Link onClick={handleHamburger} to="/login">
