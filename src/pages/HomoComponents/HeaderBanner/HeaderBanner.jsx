@@ -36,7 +36,7 @@ function HeaderBanner() {
             <img className="overflow-hidden md:max-h-[600px]" src={img3} alt="" />
           </SwiperSlide>
         </Swiper>
-        <div className="absolute top-0 bg-[#111111a2] z-10 w-full min-h-[600px]">
+        <div className="absolute top-0 bg-[#111111a2] z-10 w-full min-h-full">
           {/* This div is use for a overlay on background image */}
         </div>
 
