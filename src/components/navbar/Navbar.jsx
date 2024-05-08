@@ -78,7 +78,13 @@ const Navbar = () => {
           {/* Right side Buttons */}
           <div className="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
             <div className={`md:block space-x-3 gap-4 hidden`}>
-              <Link to="/login">
+              <Link to="/admin/dashboard">
+                <button
+                  type="button"
+                  className="text-[#222] bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
+                >
+                  Dashboard
+                </button>
                 <button
                   type="button"
                   className="text-[#222] bg-[#FDDE55] hover:bg-[#ffd310] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center"
@@ -146,7 +152,7 @@ const Navbar = () => {
         </div>
 
         {/* For Small device */}
-        <div className={`lg:hidden fixed p-6 z-[99] duration-500 md:w-[50%] w-[80%] h-screen top-0 text-white bg-[#5BBCFF] ${hamburger ? "right-0" : "right-[-350px] md:right-[-700px]"}`}>
+        <div className={`lg:hidden fixed p-6 z-[99] duration-500 md:w-[50%] w-[60%] h-screen top-0 text-white bg-[#5BBCFF] ${hamburger ? "right-0" : "right-[-350px] md:right-[-700px]"}`}>
           <button onClick={handleHamburger} className="text-2xl">
             <IoMdClose />
           </button>

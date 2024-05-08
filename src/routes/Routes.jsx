@@ -6,6 +6,8 @@ import ForgotPassword from "../pages/forgotPassword/ForgotPassword";
 import OtpPage from "../pages/otpPage/OtpPage";
 import ResetPassword from "../pages/resetPassword/ResetPassword";
 import Home from "../pages/HomoComponents/home/Home";
+import AdminDashboard from "../admin/dashboard/adminDashboard/AdminDashboard";
+import DashboardContent from "../admin/dashboard/dashboardContent/DashboardContent";
 
 const router = createBrowserRouter([
     {
@@ -36,6 +38,16 @@ const router = createBrowserRouter([
             {
                 path:'/reset-password',
                 element:<ResetPassword></ResetPassword>
+            },
+        ]
+    },
+    {
+        path:'/admin',
+        element:<AdminDashboard></AdminDashboard>,
+        children:[
+            {
+                path:'dashboard',
+                element:<DashboardContent></DashboardContent>
             }
         ]
     }
