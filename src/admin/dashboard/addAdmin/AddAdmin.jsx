@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaRegEyeSlash } from 'react-icons/fa';
 import { MdOutlineRemoveRedEye } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+
 
 const AddAdmin = () => {
     const [eye, setEye] = useState(false)

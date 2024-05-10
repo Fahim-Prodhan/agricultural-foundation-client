@@ -44,27 +44,27 @@ const Sidebar = () => {
                         {/* Others */}
                         <li>
                             <NavLink to='/admin/dashboard' className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
-                                <p className='text-2xl'>< MdDashboard /></p>
+                                <p className='text-2xl'><span className='text-gray-400 group-hover:text-white' >< MdDashboard /></span></p>
                                 <span className="ms-3">Dashboard</span>
 
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/admin/dashboard' className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
-                                <p className='text-2xl'>< GoProjectRoadmap /></p>
+                                <p className='text-2xl'><span className='text-gray-400 group-hover:text-white' >< GoProjectRoadmap /></span></p>
                                 <span className="ms-3">Projects</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/admin/dashboard' className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
-                                <p className='text-2xl'>< FaBlogger /></p>
+                                <p className='text-2xl'><span className='text-gray-400 group-hover:text-white' >< FaBlogger /></span></p>
                                 <span className="ms-3">Blogs</span>
                                 
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to='/admin/add-admin' className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
-                                <p className='text-2xl'><IoIosPersonAdd /></p>
+                                <p className='text-2xl'><span className='text-gray-400 group-hover:text-white' ><IoIosPersonAdd /></span></p>
                                 <span className="ms-3">Add Admin</span>
                                 
                             </NavLink>
