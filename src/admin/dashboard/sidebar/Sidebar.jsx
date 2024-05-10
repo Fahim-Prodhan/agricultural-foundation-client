@@ -6,6 +6,7 @@ import { MdDashboard } from "react-icons/md";
 import { GoProjectRoadmap } from "react-icons/go";
 import { FaBlogger } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import { IoIosPersonAdd } from "react-icons/io";
 
 const Sidebar = () => {
 
@@ -58,6 +59,13 @@ const Sidebar = () => {
                             <NavLink to='/admin/dashboard' className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
                                 <p className='text-2xl'>< FaBlogger /></p>
                                 <span className="ms-3">Blogs</span>
+                                
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/admin/add-admin' className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
+                                <p className='text-2xl'><IoIosPersonAdd /></p>
+                                <span className="ms-3">Add Admin</span>
                                 
                             </NavLink>
                         </li>
